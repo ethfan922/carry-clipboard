@@ -3,9 +3,9 @@
 	"id": "carry-clipboard",
 	"version": "0.1.0",
 	"name": "Carry Clipboard",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Formats and copies Hypixel Skyblock trades and dungeon info from chat to clipboard",
 	"authors": [
-		"Me!"
+		"ethfan922"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

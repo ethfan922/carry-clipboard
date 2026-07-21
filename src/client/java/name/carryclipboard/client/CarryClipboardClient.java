@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents;
 
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.chat.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -86,6 +88,8 @@ public class CarryClipboardClient implements ClientModInitializer {
 					dungeonEndOngoing = false;
 					LOGGER.info("Trade or Dungeon ended. Copying to clipboard.");
 					client.keyboardHandler.setClipboard(outputText);
+                    assert client.player != null;
+                    client.player.sendSystemMessage(Component.literal(outputText));
 					outputText = "";
 				}
 			}
