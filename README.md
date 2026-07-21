@@ -8,6 +8,7 @@ For setup instructions, please see the [Fabric Documentation page](https://docs.
 
 For all features, you will need to download and re-build [Odin](https://github.com/odtheking/Odin) with one file changed:
 src/main/kotlin/com/odtheking/odin/features/impl/boss/ExtraStats.kt
+
 Change `modMessage(message, "")` to
 ```
 message.append("\n").append(Component.literal(getChatBreak()))
