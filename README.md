@@ -11,9 +11,8 @@ src/main/kotlin/com/odtheking/odin/features/impl/boss/ExtraStats.kt
 
 Change `modMessage(message, "")` to
 ```
-message.append("\n").append(Component.literal(getChatBreak()))
 val client = Minecraft.getInstance();
 client.player?.sendSystemMessage(message);
 ```
 
-There might be a better way to implement that idk
+There might be a better way to implement that but idk
