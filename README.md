@@ -14,5 +14,6 @@ Change `modMessage(message, "")` to
 val client = Minecraft.getInstance();
 client.player?.sendSystemMessage(message);
 ```
+Then, enable Extra Stats in Odin.
 
 There might be a better way to implement that but idk
